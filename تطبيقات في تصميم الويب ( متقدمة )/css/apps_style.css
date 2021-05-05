@@ -1,0 +1,803 @@
+body {
+  background: #99999903;
+  height: 8000px;
+}
+
+article {
+  margin-top: 70px;
+  border: 1px solid #f80;
+  background: #aaa6;
+}
+
+article header {
+  padding: 0 20px;
+  background: #9999;
+  overflow: hidden;
+}
+
+article header h1 {
+  display: inline-block;
+}
+
+article header h3 {
+  display: inline-block;
+  color: red;
+  margin: 0 50px;
+  font-size: 50px;
+}
+
+article header p {
+  display: inline-block;
+  font-size: 25px;
+  color: #080;
+}
+
+/*************************** start lesson 5  spiner ******************/
+.spiner {
+  position: relative;
+}
+
+.spiner .container_spiners {
+  position: relative;
+  top: 60px;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+}
+
+.spiner .container_spiners span {
+  display: block;
+  position: absolute;
+  border: 3px solid #999;
+}
+
+.spiner .container_spiners span:first-of-type {
+  width: 90px;
+  height: 90px;
+  top: 35%;
+  left: 35%;
+  border-radius: 50%;
+  border-left: 3px solid #00f;
+  -webkit-animation: mySpiner 1s infinite linear;
+          animation: mySpiner 1s infinite linear;
+}
+
+.spiner .container_spiners span:nth-of-type(2) {
+  width: 65px;
+  height: 65px;
+  top: 48%;
+  left: 48%;
+  border-radius: 50%;
+  border-left: 3px solid #080;
+  -webkit-animation: mySpiner 2s infinite linear;
+          animation: mySpiner 2s infinite linear;
+}
+
+.spiner .container_spiners span:nth-of-type(3) {
+  width: 39px;
+  height: 39px;
+  top: 61%;
+  left: 61%;
+  border-radius: 50%;
+  border-left: 3px solid #f00;
+  -webkit-animation: mySpiner 3s infinite linear;
+          animation: mySpiner 3s infinite linear;
+}
+
+.spiner .crazy {
+  width: 100px;
+  height: 80px;
+  border: 1px solid #780;
+  border-radius: 50%;
+  -webkit-animation: mySpiner 1s infinite linear;
+          animation: mySpiner 1s infinite linear;
+}
+
+.spiner .anthor {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background: #f1f1f1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #f00;
+  border-left: 2px solid #999;
+  -webkit-animation: mySpiner 1s linear infinite;
+          animation: mySpiner 1s linear infinite;
+}
+
+@-webkit-keyframes mySpiner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes mySpiner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*************************** end lesson 5  spiner ****************************/
+/*************************** start lesson 8  aroune border  ******************/
+.around_border_8 section .cont_img {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.around_border_8 section .cont_img:hover {
+  cursor: pointer;
+}
+
+.around_border_8 section .cont_img:hover .one {
+  height: 100%;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.around_border_8 section .cont_img:hover .two {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+  width: 100%;
+}
+
+.around_border_8 section .cont_img:hover .three {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  height: 100%;
+}
+
+.around_border_8 section .cont_img:hover .four {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+  width: 100%;
+}
+
+.around_border_8 section .cont_img:hover img {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  opacity: 1;
+}
+
+.around_border_8 section .cont_img .one {
+  height: 0;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+.around_border_8 section .cont_img .two {
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+  width: 0;
+}
+
+.around_border_8 section .cont_img .three {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  height: 0;
+}
+
+.around_border_8 section .cont_img .four {
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+  width: 0;
+}
+
+.around_border_8 section .cont_img img {
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.around_border_8 section .cont_img span {
+  position: absolute;
+  background: #080;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: 2;
+}
+
+.around_border_8 section .cont_img .one {
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 0;
+}
+
+.around_border_8 section .cont_img .two {
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+}
+
+.around_border_8 section .cont_img .three {
+  right: 0;
+  bottom: 0;
+  width: 3px;
+  height: 0;
+}
+
+.around_border_8 section .cont_img .four {
+  right: 0;
+  top: 0;
+  height: 3px;
+  width: 0;
+}
+
+.around_border_8 section .cont_img .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*************************** start lesson 8  aroune border  ******************/
+/*************************** start lesson 9  aroune border  ******************/
+.around_border_9 section .cont_img {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.around_border_9 section .cont_img:hover {
+  cursor: pointer;
+}
+
+.around_border_9 section .cont_img:hover .one, .around_border_9 section .cont_img:hover .three {
+  height: 100%;
+}
+
+.around_border_9 section .cont_img:hover .two, .around_border_9 section .cont_img:hover .four {
+  width: 100%;
+}
+
+.around_border_9 section .cont_img:hover .overlay {
+  display: block;
+}
+
+.around_border_9 section .cont_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.around_border_9 section .cont_img span {
+  position: absolute;
+  background: #080;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 2;
+}
+
+.around_border_9 section .cont_img .one {
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 0;
+}
+
+.around_border_9 section .cont_img .two {
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+}
+
+.around_border_9 section .cont_img .three {
+  right: 0;
+  bottom: 0;
+  width: 3px;
+  height: 0;
+}
+
+.around_border_9 section .cont_img .four {
+  right: 0;
+  top: 0;
+  height: 3px;
+  width: 0;
+}
+
+.around_border_9 section .cont_img .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*************************** end lesson 9  aroune border  ******************/
+/*************************** start  lesson  10 transition text   ******************/
+.text_transition section .cont_text {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f00;
+  margin: 10px auto;
+  border-radius: 10px;
+  background: #444;
+  cursor: pointer;
+}
+
+.text_transition section .cont_text:hover .one {
+  opacity: 1;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.text_transition section .cont_text:hover .two {
+  opacity: 1;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.text_transition section .cont_text:hover .three {
+  opacity: 1;
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+.text_transition section .cont_text span {
+  display: block;
+  opacity: 0;
+  margin: 30px 0 0 80px;
+  color: #fff;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.text_transition section .cont_text .one {
+  opacity: 0;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.text_transition section .cont_text .two {
+  opacity: 0;
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
+
+.text_transition section .cont_text .three {
+  opacity: 0;
+  -webkit-transition-delay: .8s;
+          transition-delay: .8s;
+}
+
+/*************************** end  lesson  10 transition text   ******************/
+/*************************** start  lesson  11 hover text   ******************/
+.text_hover section {
+  background: #555;
+  height: 300px;
+}
+
+.text_hover section a {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  padding: 10px 0;
+  opacity: .5;
+}
+
+.text_hover section a:hover::before {
+  width: 100%;
+  border-bottom: 2px solid #f80;
+}
+
+.text_hover section a::before {
+  content: attr(data-text);
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  color: #f80;
+  display: inline-block;
+  top: -3px;
+  width: 10%;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.text_hover section a:last-child {
+  margin-left: 50px;
+}
+
+/*************************** end  lesson  11 hover text     ******************/
+/*************************** start  lesson  12 hover img     ******************/
+.img_hover .cont_img {
+  width: 300px;
+  height: 250px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.img_hover .cont_img:hover img {
+  opacity: .7;
+}
+
+.img_hover .cont_img:hover .cont_word::after {
+  width: calc(100% + 5px);
+}
+
+.img_hover .cont_img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.img_hover .cont_img .cont_word {
+  position: relative;
+  width: 150px;
+  height: 40px;
+}
+
+.img_hover .cont_img .cont_word::after {
+  content: '';
+  width: 0;
+  height: calc(100% + 10px);
+  background: #017;
+  left: 0;
+  top: -65px;
+  position: absolute;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 1;
+}
+
+.img_hover .cont_img .cont_word h5 {
+  position: absolute;
+  left: 0;
+  top: -60px;
+  background: #f80;
+  width: 100%;
+  line-height: 40px;
+  height: 100%;
+  z-index: 2;
+}
+
+/*************************** end  lesson  12 hover img     ******************/
+/*************************** start   lesson  12-2  text from      ******************/
+.forms form {
+  width: 400px;
+  margin: 10px auto;
+}
+
+.forms form .cont_input {
+  position: relative;
+}
+
+.forms form .cont_input input {
+  padding: 7px;
+  margin: 10px;
+  border-radius: 7px;
+  outline: none;
+  display: block;
+  width: 100%;
+  border: 1px solid #06688f;
+}
+
+.forms form .cont_input span {
+  position: absolute;
+  right: -170px;
+  top: 6px;
+}
+
+.forms form .cont_input span a {
+  color: #f00;
+  font-size: 30px;
+  position: absolute;
+  left: -17px;
+  top: -5px;
+}
+
+.forms form button {
+  display: block;
+  margin: 5px auto;
+  padding: 5px 20px;
+  border-radius: 4px;
+  outline: none;
+}
+
+/*************************** end    lesson  12-2  text from      ******************/
+/*************************** start  circels  ******************/
+.cont {
+  width: 43px;
+  height: 43px;
+  margin: 100px auto;
+  border-radius: 50%;
+  border: 1px solid #f00;
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+}
+
+span {
+  border-radius: 50%;
+  border: 1px solid #00f;
+  position: absolute;
+}
+
+.one {
+  -webkit-animation: cri1 1.5s linear infinite;
+          animation: cri1 1.5s linear infinite;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+.two {
+  top: 0;
+  left: 0;
+  -webkit-animation: cri2 1.5s linear infinite;
+          animation: cri2 1.5s linear infinite;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+.three {
+  top: 0;
+  left: 0;
+  -webkit-animation: cri3 1.5s linear infinite;
+          animation: cri3 1.5s linear infinite;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+@-webkit-keyframes cri1 {
+  0% {
+    width: 43px;
+    height: 43px;
+    top: 0;
+    left: 0;
+  }
+  50% {
+    width: 63px;
+    height: 63px;
+    top: -10px;
+    left: -10px;
+  }
+  100% {
+    width: 43px;
+    height: 43px;
+    top: 0;
+    left: 0;
+    border: 1px solid #fff;
+  }
+}
+
+@keyframes cri1 {
+  0% {
+    width: 43px;
+    height: 43px;
+    top: 0;
+    left: 0;
+  }
+  50% {
+    width: 63px;
+    height: 63px;
+    top: -10px;
+    left: -10px;
+  }
+  100% {
+    width: 43px;
+    height: 43px;
+    top: 0;
+    left: 0;
+    border: 1px solid #fff;
+  }
+}
+
+@-webkit-keyframes cri2 {
+  0% {
+    width: 43px;
+    height: 43px;
+    top: 0;
+    left: 0;
+  }
+  50% {
+    width: 73px;
+    height: 73px;
+    top: -15px;
+    left: -15px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    border: 1px solid #fff;
+  }
+}
+
+@keyframes cri2 {
+  0% {
+    width: 43px;
+    height: 43px;
+    top: 0;
+    left: 0;
+  }
+  50% {
+    width: 73px;
+    height: 73px;
+    top: -15px;
+    left: -15px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    border: 1px solid #fff;
+  }
+}
+
+@-webkit-keyframes cri3 {
+  0% {
+    width: 43px;
+    height: 43px;
+    top: 0;
+    left: 0;
+  }
+  50% {
+    width: 83px;
+    height: 83px;
+    top: -20px;
+    left: -20px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    border: 1px solid #fff;
+  }
+}
+
+@keyframes cri3 {
+  0% {
+    width: 43px;
+    height: 43px;
+    top: 0;
+    left: 0;
+  }
+  50% {
+    width: 83px;
+    height: 83px;
+    top: -20px;
+    left: -20px;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    border: 1px solid #fff;
+  }
+}
+
+/*************************** end  circles ******************/
+/*************************** start    lesson  13  heart  animation  ******************/
+.heart .cont_heart {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #f00;
+  text-align: center;
+  line-height: 70px;
+  margin: 40px auto;
+}
+
+.heart .cont_heart:hover i {
+  -webkit-animation: heart .5s linear infinite;
+          animation: heart .5s linear infinite;
+}
+
+.heart .cont_heart i {
+  font-size: 25px;
+  color: #fff;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    font-size: 25px;
+  }
+  50% {
+    font-size: 30px;
+  }
+  100% {
+    font-size: 25px;
+  }
+}
+
+@keyframes heart {
+  0% {
+    font-size: 25px;
+  }
+  50% {
+    font-size: 30px;
+  }
+  100% {
+    font-size: 25px;
+  }
+}
+
+/*************************** end   lesson  13  heart  animation  ******************/
+/*************************** start lesson 15   animation button   ******************/
+.button .cont_button {
+  margin: 40px 0;
+}
+
+.button .cont_button button {
+  position: relative;
+  left: 50%;
+  padding: 10px 30px;
+  background: #f50;
+  outline: none;
+  border: none;
+}
+
+.button .cont_button button:hover::before {
+  width: 100%;
+}
+
+.button .cont_button button:hover::after {
+  width: 100%;
+}
+
+.button .cont_button button::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #f50;
+  top: -2px;
+  right: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.button .cont_button button::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #f50;
+  left: 0;
+  bottom: -2px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+/*************************** end   lesson 15   animation button  ******************/
+/*# sourceMappingURL=apps_style.css.map */

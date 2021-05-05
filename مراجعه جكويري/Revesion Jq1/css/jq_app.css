@@ -1,0 +1,987 @@
+
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    background:#9990;
+    font-family:tahoma,arial
+}
+
+ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.clear_float{
+    clear: both;
+}
+/* start navbar **********************************************************************/
+nav{
+    height:65px;
+    background:#123;
+    padding:0 20px ;
+    line-height:65px;
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 10000;
+}
+
+nav .logo{
+    float: left;
+    width:30%;
+    color:#f2f2f2;
+    font-size:22px;
+    line-height:65px
+}
+
+nav .logo span{
+    color:green
+}
+nav ul{
+    float: left;
+    width:70%
+}
+nav ul li{
+    display:inline-block;
+    padding:5px 10px;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#f1f1f1;
+    cursor:pointer;
+    font-size:20px;
+}
+
+nav ul li a:hover{
+    cursor:pointer;
+    color:green;
+}
+
+nav ul li a.active{
+    color:green
+}
+
+/* end navbar **********************************************************************************/
+
+
+
+
+/* start fixed menu*********************************************************************** */
+.fixed_menu{
+    position:absolute;
+    width:300px;
+    height:100vh;
+    top:0;
+    left:-300px;
+    background:#123;
+    z-index:9999
+}
+
+.fixed_menu .icon{
+    position: absolute;
+    right: -35px;
+    top: 100px;
+    width: 40px;
+    height: 35px;
+    line-height: 35px;
+    color: #f2f2f2;
+    background: #123;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 0 13px 13px 0;
+}
+.fixed_menu .icon:hover i{
+    cursor: pointer;
+    transform:rotate(360deg);
+    transition: all 1s ease-in-out
+}
+.fixed_menu ul{
+    margin-top:100px
+}
+.fixed_menu ul li {
+    text-align:center;
+    margin-top:15px;
+    cursor:pointer;
+    color:#f2f2f2;
+}
+/* end fixed menu ***************************************************************************/
+
+
+
+
+/* start sections ***************************************************************************/ 
+section{
+    min-height:3000px;
+    background:#EEE;
+    border-bottom:1px solid #222;
+    padding-top:50px;
+}
+
+section h1{
+    text-align:center;
+}
+/* end secrions **********************************************************************************/
+
+
+/* start scroll to top **********************************************************************/
+.top{
+    color:#123;
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    font-size:40px;
+    transform:rotate(-90deg);
+    display:none;
+    cursor:pointer
+}
+/* end scroll to top ***************************************************************************/
+
+
+
+/* start popup *****************************************************************/
+.popup{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,.8);
+    z-index:9999;
+    display:none;
+}
+
+.popup .inner{
+    position: fixed;
+    width:320px;
+    height:300px;
+    background:#c6adad;
+    border:1px solid #eee;
+    border-radius:5px;
+    top:50%;
+    left:50%;
+    padding:15px 10px ;
+    margin:-150px 0 0 -160px
+}
+
+.popup .inner h1{
+    color:#453636de;
+    padding-bottom:10px
+}
+
+.popup .inner p{
+    color:#555;
+    padding-top:10px;
+    line-height:1.5
+}
+
+.popup .inner .close_btn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 3px 6px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    background: #998282bf;
+}
+/* end popup *****************************************************************/
+
+
+
+
+
+
+/* start show popup *****************************************************************/
+.show_pop{
+    border:1px solid #333;
+    padding:5px 10px ;
+    margin-left:10px;
+    cursor:pointer;
+    background:#123;
+    color:#fff;
+    position: relative;
+    left:-20px;
+    transition:all .2s ease-in-out
+}
+.show_pop:nth-child(2){
+    padding:5px 12px
+}
+
+.show_pop:hover{
+    left:-15px;
+}
+/* end show popup  *****************************************************************/
+
+
+
+
+
+/* start effects buttons *****************************************************************/
+.btn_effect{
+    margin:50px 150px;
+    height:30px;
+    line-height: 30px;
+    border-radius:5px;
+    outline: none;
+    border:none;
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    background:#f80;
+    position: relative;
+    color:#fff;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.from_left .over{
+    display:block;
+    position: absolute;
+    width:0;
+    height:100%;
+    top:0;
+    left:0;
+    background:#147;
+    z-index: 1;
+
+}
+.from_left span:last-child{
+    position: relative;
+    z-index:2;
+}
+
+.btn_hov{
+  font-size:20px;
+    border:none;
+    cursor: pointer;
+}
+.btn_hov .line_hov{
+    background: #f00;
+    height: 2px;
+    width: 0;
+    display: block;
+    margin-top: 4px;
+
+}
+/* end effects buttons *****************************************************************/
+
+
+
+
+
+
+
+
+/* start progress *****************************************************************/
+.contianer_progress{
+    width:300px;
+    height:200px;
+    margin-left:100px;
+    margin-bottom:50px
+  
+}
+.contianer_progress .prog{
+    width:90%;
+    height:30px;
+    margin:15px;
+    border-radius:5px;
+    overflow:hidden;
+    background:#888
+}
+
+.contianer_progress .prog span{
+    width:0;
+    height:100%;
+    display: block;
+    line-height: 30px;
+    position: relative;
+    
+}
+.ap{
+    position: absolute;
+    color:#f1f1f1;
+    right:-50%
+}
+.contianer_progress .prog  .red_prog{
+    background:#eb4d4b
+}
+
+.contianer_progress .prog  .green_prog{
+    background:#6ab04c
+}
+
+.contianer_progressb
+
+.contianer_progress .prog  .purpl_prog{
+    background:#be2edd
+}
+
+.contianer_progress .prog  .gray_prog{
+    background:#130f40
+}
+/* end progress *************************************************************************/
+
+
+
+
+
+
+/* start change color ******************************************************************/
+.change_color{
+height:300px;
+margin:20px;
+
+}
+.change_color h2{
+text-align: center;
+margin: 0 0 20px 0
+}
+.change_color ul{
+    float:left;
+    width:30%;
+}
+.change_color ul li{
+    width:30px;
+    height:30px;
+    background:#00f;
+    margin:5px;
+    cursor: pointer;
+}
+
+.change_color ul li:first-of-type{
+    background:red
+}
+.change_color ul li:nth-of-type(2){
+    background: green
+}
+.change_color ul li:nth-of-type(3){
+    background:blue;
+}
+.change_color ul li:last-of-type{
+    background:purple;
+}
+
+
+.change_color p{
+    float: left;
+    width:60%;
+    background:#080;
+    margin:0 20px;
+    padding:10px;
+    border-radius:10px
+}
+
+       /* start our colors ********************/
+[data-custom_color="red"] .ch_color{
+    color:red
+}
+[data-custom_color="red"] .ch_background{
+    color:#f1f1f1;
+    background:#f00
+}
+
+
+[data-custom_color="green"] .change_color{
+    color:green
+}
+[data-custom_color="green"] .ch_background{
+    color:#f1f1f1;
+    background: green
+}
+
+
+[data-custom_color="blue"] .ch_color{
+    color:blue;
+}
+[data-custom_color="blue"] .ch_background{
+    background:blue;
+    color: #f1f1f1
+}
+
+
+[data-custom_color="purple"] .ch_color{
+    color:purple;
+}
+[data-custom_color="purple"] .ch_background{
+    background:purple;
+    color:#f1f1f1
+}
+ /* end our colors ******************************/
+/* end change color ******************************************************************/
+
+
+
+
+/* start the slider  ******************************************************************/
+.container_slider{
+    width:704px;
+    min-height:400px;
+    margin:20px auto;
+    border:2px solid #784;
+    position:relative
+}
+.container_slider img{
+    width:700px;
+    height: 400px;
+}
+.container_slider .main_img{
+    width:700px;
+    height: 400px;
+    border-bottom:2px solid #784;
+}
+.container_slider .main_img img{
+    width:100%;
+    height:100%
+}
+.container_slider .small_imgs{
+    width:700px;
+    height: 85px;
+}
+.container_slider .small_imgs ul{
+    list-style: none;
+    margin-top:2px
+}
+.container_slider .small_imgs ul li{
+    float: left;
+    width:16%;
+    height:80px;
+    margin-right:.77777%;
+    overflow: hidden;
+    opacity:.5;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.container_slider .small_imgs ul li:hover,
+.container_slider .small_imgs ul li.active{
+    border:1px solid #123;
+    cursor: pointer;
+    opacity: 1
+}
+.container_slider .small_imgs ul li:last-child{
+    margin-right: 0 !important
+}
+.container_slider .small_imgs ul li img{
+    width:100%;
+    height:80px;
+}
+.next,.prev{
+    position: absolute;
+    height:30px;
+    color:#fff;
+    z-index: 2;
+    top:165px;
+    color:#784
+}
+.next,.prev:hover{
+    cursor: pointer;
+}
+.next{
+    right:0
+}
+/* end the slide  ******************************************************************/
+
+
+
+
+/* start toggle   ******************************************************************/
+.toggle{
+    padding:50px 0;
+    background:#784;
+    height: 400px
+}
+.toggle h1{
+    color:#fff;
+    text-align:center
+}
+.toggle > div{
+    width:50%;
+    float: left;
+    padding-left:100px;
+}
+.toggle > div .info{
+    width:200px ;
+    border:1px solid #333;
+
+    transition:all 1s ease-in-out;
+}
+.toggle > div .container_img{
+    width:198px ;
+    height:200px;
+}
+.toggle > div .info h4{
+    background:#999;
+    padding:5px;
+    margin:0
+}
+.toggle > div .info h4 i{
+    position: relative;
+    right: -78px;
+    cursor: pointer;
+}
+
+.toggle > div .info img{
+width:100%;
+height:100%
+}
+
+.hide_me{
+    display: none
+}
+.hide_p{
+    display:none
+}
+/* end toggle   ******************************************************************/
+
+
+/* start error message    ******************************************************************/
+.error{
+    position:fixed;
+    width:400px;
+    height:40px;
+    top:100px;
+    right:-400px;
+    background:#f00;
+    color:#fff
+}
+/* end error message   ******************************************************************/
+
+
+/* start our form   ******************************************************************/
+.our_form{
+    margin:50px auto;
+    width:500px;
+}
+
+.our_form form > div{
+    height:30px;
+    margin-bottom: 10px;
+} 
+.our_form form > div input,
+.our_form form  textarea{
+    width:300px;
+    padding:13px;
+    height:30px;
+}
+.our_form form  textarea{
+    height:70px !important
+}
+.our_form form > div span{
+    margin-left:5px;
+    font-size:15px;
+    color:red;
+    display: none ;
+}
+.our_form form > input[type="submit"]{
+    display: block;
+    margin:10px 100px;
+    padding:5px 25px;
+    cursor: pointer;
+}
+/* end our form   ******************************************************************/
+
+
+
+/* start unicode ******************************************************************/
+.unicode{
+    width:800px;
+    height:400px;
+    border:1px solid  #123;
+    margin:50px auto
+}
+.unicode .enter{
+    padding: 10px;
+    width: 500px;
+    height: 71px;
+    font-size: 40px;
+    margin: 10px 150px;
+    text-align: center;
+
+}
+.unicode span:first-of-type{
+    color: #123;
+    font-size: 40px;
+    margin: 10px 176px;
+}
+.unicode span:last-of-type{
+    color:green;
+    font-size: 40px;
+    margin: 12px 205px;
+}
+.unicode span .char{
+    color:red;
+    margin:0
+}
+.unicode span .key{
+    color: purple;
+    margin: 0;
+    font-size: 66px;
+}
+.unicode .out{
+    width: 207px;
+    height: 100px;
+    color: purple;
+    border: 6px solid #882274;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 20px auto;
+}
+/* end unincode *******************************************************************/
+
+
+/* start pragraphs *******************************************************************/
+.pragraphs{
+    width:700px;
+    border:2px solid #00f;
+    margin:50px auto;
+    padding:10px
+}
+.pragraphs h1{
+    text-align:center;
+    margin-bottom:20px
+}
+.pragraphs p{
+    margin-bottom:30px;
+    color:#aaa;
+    background:#222
+}
+.more{
+    color:red;
+    cursor: pointer;
+}
+/* end pragraphs  *******************************************************************/
+
+
+
+/* start effects buttton *******************************************************************/
+.effects_button{
+    width:600px;
+    height:300px;
+    border:1px solid #f00;
+    margin:50px auto;
+    padding:50px;
+}
+.effects_button button{
+    padding:5px 15px;
+    color:#fff;
+    background:#861b71;
+    margin:20px;
+    position:relative
+
+}
+/* end effects button *******************************************************************/
+
+
+
+
+
+/* start same height ****************************************************************/
+.same_height{
+    padding:50px 0;
+    background:#f1f1f1;
+    margin:100px 0
+}
+.same_height > div{
+    float: left;
+    width:32.3333%;
+    margin-left:1%;
+    background:#999;
+    margin-bottom: 50px;
+}
+/* end  same height****************************************************************/
+
+
+
+
+/** start shuffle cards ***********************************************************/
+.cards{
+    position: relative;
+    min-height: 300px;
+    left:50%;
+    margin-left:-75px;
+    z-index: 1;
+}
+.cards .card{
+    width:150px;
+    height:150px;
+    border:2px solid #333;
+    position: absolute;
+    text-align:center;
+    line-height:150px;
+    font-size:35px
+}
+.cards .card:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.cards .card:first-of-type{
+    background:rgb(145, 76, 30)
+}
+.cards .card:nth-of-type(2){
+    background:#6ab04c
+}
+.cards .card:nth-of-type(3){
+    background:#525
+}
+.cards .card:nth-of-type(4){
+    background:#963
+}
+.cards .card:nth-of-type(5){
+    background-color:#f00;
+}
+.cards .card:last-of-type{
+    background-color:rgb(0, 255, 157)
+}
+/* end shuffle cards *************************************************************************/
+
+
+
+/* start blink worning ***********************************************************************/
+.blink{
+    width:200px;
+    height:100px;
+    background:#f00;
+    border:1px solid #00f;
+    border-radius:10px;
+    outline:none;
+    line-height: 100px;
+    text-align:center;
+    margin:10px auto;
+    color:#f1f1f1;
+    display:none
+}
+/* end blink worning ************************************************************************/
+
+
+
+
+/* start to do list  ************************************************************************/
+.do_list{
+    padding:100px 0;
+    background:#555
+}
+.do_list .main{
+    width:400px;
+    margin: 0 auto;
+    border:2px solid #f2f2f2;
+}
+.do_list .main h3{
+    border-bottom:3px solid #111;
+    padding:15px;
+    background:#999;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.do_list .main ul{
+    list-style:none;
+}
+.do_list .main ul li{
+    padding:10px;
+    border:1px solid #222;
+    text-align:center;
+    color:#f1f1f1;
+    cursor: pointer;
+}
+.do_list .main form .my_input{
+    padding:15px;
+    width:100%
+}
+/* end to do list  ************************************************************************/
+
+
+
+/* start typer   ************************************************************************/
+.typer{
+    padding:70px 0;
+    background:#123;
+    text-align:center;
+    color:#fff
+}
+.typer p{
+    margin-top:30px;
+    font-weight: bold;
+    
+}
+/* end typer  ************************************************************************/
+
+
+
+/* start calculator  ************************************************************************/
+table{
+    width:700px;
+    border:2px solid #f1f1f1;
+    background:#555;
+    margin:20px auto
+}
+
+table tr:first-child td{
+    background: #333;
+    color:#f1f1f1
+}
+table tr td{
+    background:#f1f1f1;
+    padding:10px
+}
+/* end calculator  ************************************************************************/
+
+
+
+
+
+/* start dinamic tabs */
+.dinamic_tabs{
+    margin-top:100px;
+    padding:50px 0;
+    border:1px solid #125
+}
+
+.dinamic_tabs .content{
+    width:700px;
+    height:300px;
+    margin:10px auto;
+}
+
+
+
+.dinamic_tabs .content .tabs_list li{
+    display: inline-block;
+    padding:10px 35px;
+    border: 1px solid #201c1c36;
+    position: relative;
+    cursor: pointer;
+    top:1px
+}
+.tabs_list .active_tab,
+.tabs_list li:hover{
+    background:#fff;
+    color:#f80; 
+}
+
+.tabs_list .active_tab{
+    border-bottom:1px solid #fff !important;
+    z-index: 4;
+}
+
+.dinamic_tabs .content .info{
+    border: 1px solid #201c1c36;
+    height: 100%;
+    background: #fff;
+    padding: 15px;
+    z-index: 2;
+    position: relative;
+}
+
+.dinamic_tabs .content .info p:not(:first-child){
+    display: none;
+}
+
+.left_list {
+    overflow: hidden;
+    width:700px
+}
+
+.left_list .tabs_list,
+.left_list .info{
+    float: left;
+}
+
+.left_list .tabs_list{
+    position: relative;
+    top: -1px;
+    left: 1px !important;
+}
+.left_list .tabs_list li{
+    display: block !important;
+}
+
+.left_list .tabs_list li:first-of-type,
+.left_list .tabs_list li:nth-of-type(2),
+.left_list .tabs_list li:nth-of-type(3){
+    border-bottom: none !important;
+}
+
+.left_list .tabs_list .active_tab{
+    border-bottom: 1px solid #201c1c36 !important;
+    border-right:1px solid #fff !important
+}
+.left_list .info{
+    width:576px;
+}
+
+.switch{
+    width: 70px;
+    height: 40px;
+    background: #1f1e1e;
+    border: 2px solid #ccc;
+    margin-left: 100px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #f1f1f1;
+}
+/* end dinamic tabs */
+
+
+
+
+/* start auto ******************************/
+.auto{
+    margin-top:100px;
+    padding:50px;
+    background:#784;
+    border:inset 2px solid #321;
+}
+.auto .cont{
+    width:300px;
+    margin: auto;
+    position: relative;
+}
+.auto .cont input{
+    width: 100%;
+    padding: 10px;
+    background: #784;
+    margin-bottom: 20px;
+    border: 1px solid #458;
+    color: #fff;
+}
+.auto .cont .mail_list{
+    padding:0;
+    margin:0;
+    width:100%;
+    border:1px solid #458;
+}
+
+.auto .cont .mail_list li:first-of-type::before{
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 37px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent #458;
+}
+.auto .cont .mail_list li{
+    width:100%;
+    padding:5px;
+    border-bottom:1px solid #458
+}
+.auto .cont .mail_list li:hover{
+    background:#aaa;
+    cursor:pointer
+}
+/* end  auto ******************************/

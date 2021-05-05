@@ -1,0 +1,326 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    background: #77777726;
+    height:7000px;
+}
+
+article{
+    width:800px;
+    margin:50px auto;
+    border:1px solid #222;
+    padding:0;
+}
+article header{
+    background:#666;
+    border-bottom: 1px solid #222;
+    margin:0;
+    line-height: 40px;
+    padding-left:10px;
+}
+article header span:first-child {
+    font-size: 30px;
+    color:#f1f1f1;
+    font-weight: bold;
+}
+article header span:last-child {
+    font-size: 20px;
+    color:#f1f1f1;
+    font-weight: bold;
+    margin-left:50px
+}
+article section{
+    background:#777;
+    padding:10px;
+}
+
+
+
+/******************************************************* start  lesson 2 ************/
+.lesson_two ul li:first-of-type{
+    color:rgb(255,0,0);
+}
+.lesson_two ul li:nth-of-type(4){
+    color:#00f;
+}
+/******************************************************* end  lesson 2 ************/
+
+
+
+
+
+/******************************************************* start  lesson 3 **********/
+.lesson_three{
+    height: 350px;
+}
+.lesson_three section{
+    background:#f50;
+    height:350px;
+}
+.lesson_three section .div_one{
+    width:300px;
+    height: 300px;
+    background:#099;
+}
+.lesson_three section .div_two{
+    width:250px;
+    height: 250px;
+    background:#088;
+}
+.lesson_three section .div_three{
+    width:200px;
+    height: 200px;
+    background:#077;
+}
+.lesson_three section .div_four{
+    width:150px;
+    height: 150px;
+    background:#066;
+}
+.lesson_three section .div_five{
+    width:100px;
+    height: 100px;
+    background:#055;
+}
+.lesson_three section .div_six{
+    width:50px;
+    height: 50px;
+    background:#044;
+}
+.lesson_three section .div_seven{
+    width:20px;
+    height: 20px;
+    background:#f50;
+}
+/******************************************************* end  lesson 3   **********/
+
+
+/******************************************************* start  lesson 5   **********/
+.lesson_five form textarea{
+    width:300px;
+    height: 100px;
+}
+/******************************************************* end  lesson 5   **********/
+
+
+
+/******************************************************* start  lesson 6  **********/
+.lesson_six form span{
+    padding:1px 10px;
+    display:inline-block;
+    margin-top:7px;
+    border:1px solid #EEE;
+    background:#f1f1f1;
+    cursor: pointer;
+}
+/******************************************************* end  lesson 6  **********/
+
+
+
+
+/******************************************************* start  lesson 8  **********/
+.lesson_eight .auto{
+    width:100px;
+    height:100px;
+    background:#f50;
+    margin: 130px auto 50px auto;
+    position: relative;
+    text-align:center;
+    line-height: 100px;
+    cursor: pointer;
+}
+.lesson_eight .auto .sm1{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    top:-50px;
+    left:25px;
+    background:#f50;
+    text-align: center;
+}
+.lesson_eight .auto .sm1 .sm2{
+    width:25px;
+    height: 25px;
+    position: absolute;
+    top:-25px;
+    left:12.5px;
+    background:#f50;
+}
+/******************************************************* end  lesson 8  **********/
+
+
+
+/******************************************************* end  lesson 10  **********/
+.lesson_ten .top{
+    width:30px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    background:#f50;
+    border-radius:50%;
+    border:1px solid #333;
+    cursor:pointer;
+}
+/******************************************************* end  lesson 10  **********/
+
+
+
+
+/******************************************************* end  lesson 11  **********/
+.container{
+    width:90%;
+    margin:50px auto;
+    height: 200px;
+    background:#585858;
+    border:1px solid #f1f1f1;
+}
+.container > div{
+    float: left;
+    background:#fff;
+    height:100%;
+    border:1px solid #555;
+    width:calc(70%/4)
+}
+/******************************************************* end  lesson 11  **********/
+
+
+
+/******************************************************* end  lesson 11  **********/
+.lesson_eleven .container{
+    width:90%;
+    margin:50px auto;
+    height: 200px;
+    background:#585858;
+    border:1px solid #f1f1f1;
+}
+.lesson_eleven .cont {
+    height: 200px;
+}
+.lesson_eleven .cont > div{
+    float:left;
+    height: 200px;
+    background:#fff;
+    border-right: 1px solid #555;
+    cursor: pointer;
+}
+.lesson_eleven .cont .item{
+    width:10%;
+}
+.lesson_eleven .cont .info{
+    width:0;
+    display: none;
+    text-align: center;
+    line-height: 200px;
+    background:#222;
+    color:#fff;
+}
+/******************************************************* end  lesson 11  **********/
+
+
+
+
+/******************************************************* end  lesson 12  **********/
+.lesson_tewelve{
+    position: relative;
+}
+.lesson_tewelve ul li{
+    width:30px;
+    height: 30px;
+    margin:5px 0 0 15px;
+    cursor: pointer;
+}
+.lesson_tewelve ul li:first-of-type{
+    background:#f50;
+}
+.lesson_tewelve ul li:nth-of-type(2){
+    background:#005599;
+}
+.lesson_tewelve ul li:nth-of-type(3){
+    background:#044;
+}
+.lesson_tewelve ul li:nth-of-type(4){
+    background:#784;
+}
+.lesson_tewelve p{
+    font-size: 40px;
+    text-align:center
+}
+
+
+[data-allcolor="one"] .change-color{
+    color:#f50;
+}
+
+
+[data-allcolor="two"] .change-color{
+    color:#005599;
+}
+
+
+[data-allcolor="three"] .change-color{
+    color:#044;
+}
+
+
+[data-allcolor="four"] .change-color{
+    color:#784;
+}
+
+
+
+
+.lesson_tewelve .back{
+    position: absolute;
+    top:60px;
+    right: 10px;
+}
+[data-allcolor="one-back"] .change-back-color{
+    background:#f50;
+    color:#fff
+}
+
+[data-allcolor="two-back"] .change-back-color{
+    background:#005599;
+    color:#fff
+}
+[data-allcolor="three-back"] .change-back-color{
+    background:#044;
+    color:#fff
+}
+[data-allcolor="four-back"] .change-back-color{
+    background:#784;
+    color:#fff
+}
+
+/******************************************************* end  lesson 12  **********/
+
+
+
+/******************************************************* end  lesson 13  **********/
+.lesson_threeteen ul li{
+    border:1px solid #f50;
+    width: 100px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 0;
+}
+.lesson_threeteen ul li:hover{
+    background: #f1f1ff;
+}
+.se{
+    height: 50px;
+    border:1px solid #000
+}
+/******************************************************* end  lesson 13  **********/

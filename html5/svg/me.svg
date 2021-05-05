@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="20" r="20" fill="#f80"/>
+    <rect x="40" y="40" width="50" height="50" fill="red"/>
+    <rect x="60" y="60" width="50" height="50" fill="#080"/>
+    <rect x="80" y="80" width="50" height="50" fill="#00f"/>
+    <rect x="200" y="80" width="50" height="50" rx="20" ry="20" fill="brown"/><!--rx & ry بيعملو بوردر راديوس-->
+</svg>

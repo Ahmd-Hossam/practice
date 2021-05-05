@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 5000px;
+        }
+        h1{
+            text-align: center;
+            text-transform: capitalize;
+            color:#f50;
+        }
+        .contain{
+            position: fixed;
+            display: flex;
+            margin-top:50px ;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background:rgb(63, 165, 124, 103);
+            color:#f2f2f2;
+            border-radius:50%;
+            text-align:center;
+            padding-top:50px;
+        }
+        .item h2{
+            text-transform: capitalize;
+        }
+        .item h5{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center"> our cleints </h1>
+        <div class="contain">
+            <div class="item"> 
+                <h2> egypt </h2>
+                <h5 data-count='1000'> 0</h5>
+            </div>
+            <div class="item"> 
+                <h2> american </h2>
+                <h5 data-count='9000'> 0</h5>
+            </div>
+            <div class="item"> 
+                <h2> rosia </h2>
+                <h5 data-count='3000'> 0</h5>
+            </div>
+            <div class="item"> 
+                <h2> gordon </h2>
+                <h5 data-count='5000'> 0</h5>
+            </div>
+        </div>
+    </div>
+    <script>
+        const items=document.querySelectorAll('.item h5');
+        const speed=500;
+
+    const counter= ()=>{
+        items.forEach(item =>{
+            const update=() =>{
+                const count=+item.getAttribute('data-count');
+                const text=+item.innerHTML;//to convert to number
+                const inc=count/speed;
+
+                if(text < count){
+                    item.innerText=text + inc;
+                    setTimeout(update,100)
+                }else{
+                    item.innerText=count;
+                }
+            }
+            update();
+        });
+    }
+
+    window.onscroll=()=>{
+        if(document.body.scrollTop >100 || document.documentElement.scrollTop > 100){
+            counter();
+        }
+    }
+    </script>
+</body>
+</html>

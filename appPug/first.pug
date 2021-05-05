@@ -1,0 +1,13 @@
+head
+    include includes/st.pug 
+    include vars/vars
+    include includes/mixins
+    p(class= myclass) hello from pragraph
+    p(class='me ' + myclass) hello from me 
+    -for(var i=0 ;i<=10; i++)
+        li this is  #{i}  item 
+    each val in['one',2,20,52,25,25,'medo']
+        div=val
+    div.medo hllo medo from tag interpolation #[span i am happu from this span ]
+    div.myskills
+        +medo

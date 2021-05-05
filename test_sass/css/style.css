@@ -1,0 +1,464 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+.clear_float {
+  clear: both;
+}
+
+.h1 {
+  font-size: 2em;
+}
+
+.h1 span {
+  color: red;
+}
+
+.h1 span span {
+  color: green;
+}
+
+.text-center {
+  text-align: center;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+/******************************* start variabels */
+h1 {
+  color: #f80;
+  background: #147;
+}
+
+/****************************** end  variabels */
+/******************************* start nesting  */
+.parent {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #999;
+  background: #fff;
+  margin: auto;
+}
+
+.parent:hover {
+  background: #123;
+  cursor: pointer;
+}
+
+.parent .child_one {
+  margin: 20px;
+  background: black;
+  color: #fff;
+}
+
+.parent .child_two {
+  margin: 0 20px 20px 20px;
+  background: brown;
+  color: white;
+}
+
+/******************************* end nesting  */
+/******************************* start operators   */
+.operators {
+  background: #333;
+  overflow: hidden;
+}
+
+.operators .o-one {
+  font-size: 30px;
+  float: left;
+  width: 25%;
+}
+
+.operators .o-two {
+  font-size: 35px;
+  float: left;
+  width: 25%;
+}
+
+.operators .o-three {
+  font-size: 40px;
+  float: left;
+  width: 25%;
+}
+
+.operators .o-four {
+  font-size: 45px;
+  float: left;
+  width: 25%;
+}
+
+/******************************* end operators  */
+/******************************* start extend  */
+.extend {
+  background: #639856;
+  padding: 50px;
+}
+
+.extend .ex-one, .extend .ex-two {
+  color: #f1f1f1;
+  background: #147;
+  border-radius: 5px;
+  margin: 30px;
+  outline: none;
+  border: 2px solid #123;
+  padding: 15px;
+}
+
+.extend .ex-two {
+  padding: 30px;
+}
+
+/******************************* end extend   */
+/******************************* start place   */
+.place {
+  background: #147;
+  padding: 30px;
+}
+
+/******************************* end place    */
+/******************************* start import   */
+/*       @import"osama";         بستدعيه فوق  */
+.import {
+  background: #852;
+  padding: 30px;
+}
+
+/******************************* end import     */
+/******************************* start mixin    */
+.mix {
+  background: #1254;
+  padding: 30px;
+}
+
+.mix div {
+  border-radius: 14px;
+  background: #123;
+  margin: 30px;
+}
+
+.mix .mix_1 {
+  border-radius: 5px;
+}
+
+.mix .mix_2 {
+  border-radius: 15px;
+}
+
+.mix .mix_3 {
+  border-radius: 25px;
+}
+
+/******************************* end mixin    */
+/******************************* start if    */
+.iff {
+  background: #3173b64a;
+  margin: 50px;
+  padding: 30px;
+}
+
+.div_if {
+  width: 100px;
+  height: 50px;
+  margin: auto;
+  background: #123;
+  border: 1px solid #145;
+  border-radius: 10px;
+  line-height: 50px;
+  text-align: center;
+  color: #f2f1f1;
+}
+
+/******************************* end if    */
+/******************************* start for     */
+.ffor {
+  background: #784;
+  padding: 30px;
+  text-align: center;
+  margin: 50px;
+}
+
+.class1 {
+  font-size: 16px;
+}
+
+.class2 {
+  font-size: 17px;
+}
+
+.class3 {
+  font-size: 18px;
+}
+
+.class4 {
+  font-size: 19px;
+}
+
+.class5 {
+  font-size: 20px;
+}
+
+.class6 {
+  font-size: 21px;
+}
+
+.class7 {
+  font-size: 22px;
+}
+
+.class8 {
+  font-size: 23px;
+}
+
+.class9 {
+  font-size: 24px;
+}
+
+.class10 {
+  font-size: 25px;
+}
+
+.class11 {
+  font-size: 26px;
+}
+
+.class12 {
+  font-size: 27px;
+}
+
+.class13 {
+  font-size: 28px;
+}
+
+.class14 {
+  font-size: 29px;
+}
+
+.class15 {
+  font-size: 30px;
+}
+
+.class16 {
+  font-size: 31px;
+}
+
+.class17 {
+  font-size: 32px;
+}
+
+.class18 {
+  font-size: 33px;
+}
+
+.class19 {
+  font-size: 34px;
+}
+
+.class20 {
+  font-size: 35px;
+}
+
+/******************************* end for    */
+/******************************* start grade sysyem    */
+.grade {
+  padding: 50px 0;
+  background: #639856;
+  overflow: hidden;
+}
+
+.export, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  float: left;
+  border: 1px solid #123;
+  padding: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/******************************* end grade sysyem    */
+/******************************* start each    */
+.each {
+  padding: 50px 0;
+  margin-top: 100px;
+  background: #cc262869;
+  color: #fff;
+}
+
+.facebook {
+  background: url("../imgs/facebook.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.twitter {
+  background: url("../imgs/twitter.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.youtube {
+  background: url("../imgs/youtube.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+/******************************* end each      */
+/******************************* start mlti_each    */
+.each2 {
+  padding: 20px 0;
+  margin-top: 200px;
+  background: #7c26cc69;
+  color: #fff;
+}
+
+.one {
+  background: red;
+  color: black;
+  font-size: 20px;
+  width: 100px;
+}
+
+.two {
+  background: black;
+  color: red;
+  font-size: 30px;
+  width: 200px;
+}
+
+.three {
+  background: purple;
+  color: white;
+  font-size: 40px;
+  width: 300px;
+}
+
+.four {
+  background: #348f5a;
+  color: white;
+  font-size: 50px;
+  width: 400px;
+}
+
+.fife {
+  background: #220080;
+  color: white;
+  font-size: 60px;
+  width: 500px;
+}
+
+/******************************* end multi each      */
+/******************************* start map each    */
+.each3 {
+  padding: 20px 0;
+  margin-top: 200px;
+  background: #785;
+  color: #fff;
+}
+
+.heads h1 {
+  font-size: 15px;
+  background: #258;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.heads h2 {
+  font-size: 20px;
+  background: #258;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.heads h3 {
+  font-size: 30px;
+  background: #258;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.heads h4 {
+  font-size: 40px;
+  background: #258;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.heads h5 {
+  font-size: 50px;
+  background: #258;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+/******************************* end map each     */
+/*# sourceMappingURL=style.css.map */

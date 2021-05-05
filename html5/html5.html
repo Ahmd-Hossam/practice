@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/html5.css">
+</head>
+<body>
+    <!-- start header ---------------------------------------------------------------------->
+    <header class="main_header">
+        <h1>welcome to html5 </h1>
+    </header>
+    <main>welcome to my html5 </main><!-- مره واحده بس مثلا اللوجو او عنوان رئيسي في جريده -->
+    <!-- end header ---------------------------------------------------------------------->
+                                                                                         
+    <!-- start article -------------------------------------------------------------------->
+<div class="contaier">
+    <article>
+            <header>
+                <h1>this article about <span>&lt;/ detalis&gt;</span> </h1>
+                <p>created my medo in<span>15/6/2019</span></p>
+            </header>
+            <section>
+                <details>
+                    <summary>to show </summary>
+                    <ul>
+                        <li>css</li>
+                        <li>html</li>
+                        <li>javascript</li>
+                    </ul>
+                </details>
+                <details open>
+                        <summary>to hide </summary>
+                        <ul>
+                            <li>css</li>
+                            <li>html</li>
+                            <li>javascript</li>
+                        </ul>
+                </details>
+            </section>
+    </article>
+    <article>
+            <header>
+                    <h1>this article about <span>&lt;/ wber&gt;</span> </h1>
+                    <p>created my medo in<span>15/6/2019</span></p>
+            </header>
+            <section>
+                <div>
+                        <wbr>https://chrome.google</wbr><wbr>.com/webstore/</wbr>detail/validity/bbicmjjbohdfglopkidebfccilipgeif
+                </div>
+            </section>
+    </article>
+    <article>
+            <header>
+                    <h1>this article about <span>&lt;/ figure&gt;</span> </h1>
+                    <p>created my medo in<span>15/6/2019</span></p>
+            </header>
+            <section>
+                <figcaption>discripe div</figcaption>
+                <figure>
+                    <code>
+                        &lt;div&gt; this is mormal division &lt;/ div&gt;
+                    </code>
+                </figure>
+            </section>
+    </article>
+    <article>
+            <header>
+                    <h1>this article about <span>&lt;/time&gt;</span> </h1>
+                    <p>created my medo in<span>15/6/2019</span></p>
+            </header>
+            <section>
+                <time datetime="15/6/2019">time is 15/6/2019</time>
+            </section>
+    </article>
+    <article>
+            <header>
+                    <h1>this article about <span>&lt;/bdi&gt;</span> </h1>
+                    <p>created my medo in<span>15/6/2019</span></p>
+            </header>
+            <section>
+                <ul>
+                    <li>ahmed:1996</li>
+                    <li>ali:1998</li>
+                    <li><bdi> بودي </bdi>:2018</li>
+                </ul>
+            </section>
+    </article>
+    <article>
+            <header>
+                    <h1>this article about <span>&lt;/video&gt;</span> </h1>
+                    <p>created my medo in<span>16/6/2019</span></p>
+            </header>
+            <section>
+                <video controls  loop  muted width="300px" height="300px" poster="imgs/fiqy.jpg" preload="auto">
+                    <source src="video/my_video.mp4" type="video/mp4" >
+                        your browser doesnt support video 
+                </video> 
+            </section>
+    </article>
+    <article>
+            <header>
+                    <h1>this article about <span>&lt;input in form&gt;</span> </h1>
+                    <p>created my medo in<span>16/6/2019</span></p>
+            </header>
+            <section>
+                <form class="html5"> 
+                    <label>color</label>
+                    <input type="color" name="theme" value="#9b59b6" > 
+
+                    <label>rang</label>
+                    <input type="range" name="rang " min="2" max="20" step="2" >
+
+                    <label>number</label>
+                    <input type="number" name="choose" min="0" max="20" step="2">
+
+                    <label>search</label>
+                    <input type="search" name="search">
+
+                    <label>link</label>
+                    <input type="url" name="link"> 
+
+                    <label>time</label>
+                    <input type="time" name="time">
+
+                    <label>date</label>
+                    <input type="date" name="date">
+
+                    <label>date time</label>
+                    <input type="datetime-local" name="datetime">
+
+                    <label>week</label>
+                    <input type="week" name="week">
+
+                    <label> month</label>
+                    <input type="month" name="month">
+
+                    <label>required حقل مطلوب</label> <!-- لاي حقل مطلوب او عايز اعمله تعطيل-->
+                    <input type="text" required>
+
+                    <label>disabled مش ينفع يكتب</label>
+                    <input type="text" disabled>
+                    
+                    <label>email</label>
+                    <input type="email" >
+                    &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; <input type="submit">
+                </form>
+            </section>
+    </article>
+    <article>
+            <header>
+                    <h1>this article about <span>attributs in form input num 1</span> </h1><label style="color:#00f;">لازم عناصر الانبوت يكونو في فورم </label>
+                    <p>created my medo in<span>17/6/2019</span></p>
+            </header>
+            <section>
+                <form action="me.php">  <!-- auto focus --> 
+                    <label class="label"><span> جوه الانبوتautofocus</span>autofocus اول ما الصفحه تحمل </label>
+                    <br>
+                    <input type="text" name="user name" autofocus placeholder="name">
+                    <input type="password" name="password" autofocus placeholder="password"> 
+                    <input type="submit">
+                </form>
+                <form action="me.php">  <!-- autocompelet -->
+                    <label class="label"><span >جوه الانبوت  autocomplete="off"</span> مش عايزيظهر اللي اتسجل قبل كده    </label>
+                    <br>
+                    <input type="text" name="user name" autofocus autocomplete="off" placeholder="name">
+                    <input type="password" name="password" autofocus placeholder="password"> 
+                    <input type="submit">
+                </form>
+                <form action="me.php" > <!--  الطريقه الصحيحه   email -->
+                    <label class="label"><span>لازم www  @  .com .org .net  </span>  كتابه الاميل بطريقه صحيحه    </label>
+                    <br>
+                    <input type="text" name="user name" placeholder="name">
+                    <input type="email" placeholder="mail"> 
+                    <input type="submit">
+                </form>
+                <form action="me.php" novalidate> <!--  الطريقه الخطا    email -->
+                    <label class="label"><span > جوه الفورم novalidate   </span> كتابه غير صحيحه للاميل يبعته بدون اظهار رساله خطا    </label>
+                    <br>
+                    <input type="text" name="user name" placeholder="name">
+                    <input type="email" placeholder="mail" > 
+                    <input type="submit">
+                </form>
+            </section>
+    </article>
+    <article>
+            <header>
+                    <h1>this article about <span>attributs in form input num 2</span> </h1><label style="color:#00f;">لازم عناصر الانبوت يكونو في فورم </label>
+                    <p>created my medo in<span>17/6/2019</span></p>
+            </header>
+            <section>
+                <form action="me.php">  <!-- action -->
+                    <label class="label"><span> جوه الفورم   action="me.php"</span>actuion جوه الفورم كل عناصر الفورم بتتبعت لصفحه معينه </label>
+                    <br>
+                    <input type="text" name="user name" placeholder="name">
+                    <input type="password" name="password" placeholder="passwoed"> 
+                    <input type="submit">
+                </form>
+                <form action="me.php" method="GET"><!--  get -->
+                    <label class="label"><span> جوه الفورم  method="get"</span>method بيظهر الداتا في الشريط فوق </label>
+                    <br>
+                    <input type="text" name="user name" placeholder="name">
+                    <input type="password" name="password" placeholder="password"> 
+                    <input type="submit">
+                </form>
+                <form action="me.php" method="POST"><!-- post  -->
+                    <label class="label"><span>  جوه الفورم  method="post"</span>post مش بيخليها تظهر فوق </label>
+                    <br>
+                    <input type="text" name="user name" placeholder="name">
+                    <input type="password" name="password" placeholder="password"> 
+                    <input type="submit">
+                </form>
+                <form action="me.php" method="POST"><!-- other  -->
+                    <label class="label"><span>   جوه زرار السب ميتform action="other.php"   </span>   other.phpيبعت لصفحه تانيه    </label>
+                    <br>
+                    <input type="text" name="user name" placeholder="name">
+                    <input type="password" name="password" placeholder="password"> 
+                    <input type="submit" formaction="me.php" value="me">
+                    <input type="submit" formaction="other.php" value="other">
+                </form>
+            </section>
+    </article>
+    <article>
+            <header>
+                    <h1>this article about <span>attributs in form input num 3</span> </h1><label style="color:#00f;">لازم عناصر الانبوت يكونو في فورم </label>
+                    <p>created my medo in<span>17/6/2019</span></p>
+            </header>
+            <section>
+                <form action="me.php" method="POST"><!-- other  -->
+                    <label class="label"><span>   جوه زرار السب ميتformmethod="get"   </span>get لو عايز الصفحه التانيه يتبعتلها بال </label>
+                    <br>
+                    <input type="text" name="user name" placeholder="name">
+                    <input type="password" name="password" placeholder="password"> 
+                    <input type="submit" formaction="me.php" value="me">
+                    <input type="submit" formaction="other.php" formmethod="GET" value="other">
+                </form>
+                <form action="me.php" method="POST" id="main" novalidate><!-- id  -->
+                    <label class="label"><span> جوه الصغيره form="main_form"  جوه الكبيره id="main_form"</span>  لو عايز ابعت حاجه في فورم مع حاجه في فورم تانيه    </label>
+                    <br>
+                    <input type="text" name="user name" placeholder="name">
+                    <input type="email" name="password" placeholder="email"> 
+                    <input type="submit" formaction="me.php" value="me">
+                    <input type="submit" formaction="other.php" formmethod="GET" value="other">
+                </form>
+                        <form>
+                            <input type="text" name="neckname"  form="main"  placeholder="neckname" >
+                        </form>
+                <form action="me.php" method="POST" id="main" ><!-- validate button  -->
+                    <label class="label"><span>  </span> لو عايزاعمل فاليدات لزرار معين بس انه يبعت من غير تزكيز علي الاميل </label>
+                    <br>
+                    <input type="text" name="user name" placeholder="name">
+                    <input type="email" name="password" placeholder="email"> 
+                    <input type="submit" formaction="me.php" value="me">
+                    <input type="submit" formaction="other.php" formmethod="GET"  value="other">
+                    <input type="submit" formaction="other.php" formmethod="GET" placeholder="email" value="validate button" formnovalidate >
+                </form>
+                <form action="me.php" method="POST"><!-- newtab  -->
+                    <label class="label"><span>  </span> ابعت الفورم وافتح صفحه جديده </label>
+                    <br>
+                    <input type="text" name="user name" placeholder="name">
+                    <input type="email" name="password" placeholder="email"> 
+                    <input type="submit" formnovalidate formtarget="_blank" value="send and new window">
+                </form>
+            </section>
+    </article>
+    <article>
+            <header>
+                <h1>this article about <span>attributs in form input num 4</span> </h1><label style="color:#00f;">لازم عناصر الانبوت يكونو في فورم </label>
+                <p>created my medo in<span>17/6/2019</span></p>
+            </header>
+            <section>
+                <form>
+                    <label class="label"><span>  min  & max  & step </span> اقل عدد واكبر عدد وطريقه العد في الانبوت  </label>
+                    <br>
+                    <input type="number" name="number" min="4" max="20" step="2">
+                    <input type="submit" name="submit" >
+                </form>
+                <form>
+                    <label class="label"><span> جوه التكست والسيرش ويوارال والايميل pattern  </span> تحديد عدد الحروف بالظبط وسواء كابتال او سمول  </label>
+                    <br>
+                    <input type="text" name="text" placeholder="enter your name capital 6 leters" pattern="[A-Z]{6}">
+                    <input type="submit" name="submit" >
+                </form>
+                <form>
+                    <label class="label"><span> قراءه بس readonliy  </span>  يقراء بس مش يكتب حاجه وبتتبعت للسيرفر عكس الدسابل مش بيتبعت   </label>
+                    <br>
+                    <input type="text" name="text" readonly value="this is readonly input">
+                    <input type="submit" name="submit" >
+                </form>
+                <form>
+                    <label class="label"><span> قراءه بس disabled  </span>    يقراء بس مش يكتب حاجه وبتتبعت  عكس  مش بيتبعت للسيرفر   </label>
+                    <br>
+                    <input type="text" name="text" disabled value="this is readonly input">
+                    <input type="submit" name="submit" >
+                </form>
+            </section>
+    </article>
+</div> <!-- end container -->
+<!-- end arirce ----------------------------------------------------------------->
+                                                                                             
+<!-- start aside ---------------------------------------------------------------->
+    <aside>
+        <section><!-- section 1-->
+            <h2>catigoris </h2>
+            <ul>
+                <li> intreo </li>
+                <li> attribute </li>
+                <li> semantics </li>
+                <li> Api </li>
+                <li> multimedia Elements </li>
+            </ul>
+        </section>
+        <section>  <!-- section 2-->
+                <h2>progress </h2>
+                <ul>
+                    <li> html:<progress value="7" max="10"></progress> </li>
+                </ul>
+        </section>
+        <section>  <!-- section 3-->
+                <h2>meter </h2>
+                <ul>
+                    <li> <!-- الطبيعي بتاع الميتر المني 0 والماكس 1 القيم الافتراضيه يعني ملهاش دعوه باقصي ي او اصغر قيمه -->
+                        <!-- low & heigh عشان اغير في القيم واقوله اقل حاجه واقصي حاجه ويغير ف الالوان-->
+                        <!-- optimum القيمه المثاليه ليها -->
+                        cpu:<meter
+                        min="0"
+                        max="1"
+                        value=".6"
+                        low=".3"
+                        heigh="8"
+                        optimum="5"
+                        >
+                        </meter>
+                    </li>
+                </ul>
+        </section>
+        <section> <!-- choose your contry -->
+            <h2> datalist</h2>
+            <h1>  choose your contry</h1>
+            <form>
+                <input list="contrys">
+                <datalist id="contrys">
+                    <option value="american">
+                    <option value="egypt">
+                    <option value="dhabi">
+                    <option value="soudi">
+                    <option value="jordan">
+                    <option value="soudan">
+                </datalist>
+                <input type="submit" value="send">
+            </form>
+        </section>
+        <section> <!-- calculate your age  -->
+            <h2> datalist</h2>
+            <h1>  choose your contry</h1>
+            <form oninput="resalt.value=parseInt(age.value)+'your age  in days is'
+            +parseInt(days.value)+'days'">
+                <input type="text" name="age">
+                <input type="hidden" name="days" value="365">
+                <div> <output name="resalt"></output> </div>
+            </form>
+        </section>
+        <section> <!-- print your text   -->
+            <h2> datalist</h2>
+            <h1> print your text</h1>
+            <form oninput="resalt.value=age.value">
+                <input type="text" name="age">
+                <div class="printed"> <output name="resalt"></output> </div>
+            </form>
+        </section>
+        <section > <!-- audio -->
+            <h2> audio </h2>
+            <h1> your favoriut song </h1>
+            <audio controls  loop style="width:270px;" >
+                <source src="songs/012.mp3">
+                    your browser dosnt suppert audio <!-- بتظهر لو المتصفح مش دعم الاوديو-->
+            </audio>
+        </section>
+    </aside>
+<!-- end aside ---------------------------------------------------------------->
+                                <div class="clear_float"></div>
+                                                                                                   
+<!-- star canvas--------------------------------------------------------------->
+<div class="can_container">
+        <h1 class="h1"> welcome to canvas 1 </h1><!-- cavens  one -->
+        <article><!--------------------------------------------- class one ------------------------>
+            <header>
+                <h1>this canvas about <span>fillStyle & fillRect </span> </h1>
+            </header>
+            <section>
+                <div class="can_div"> <!-- canvas 1-->
+                    <h4> fillStyle & fillRect <span>عبي لون واعمله مستطيل </span></h4>
+                    <canvas id="my_canvas1"></canvas>
+                    <details><summary>show code </summary>
+                        <p>
+                            var can=document.getElementById('my_canvas1');
+                            var context=can.getContext('2d');
+                            context.fillStyle="#000"; 
+                            context.fillRect(10,10,50,50);
+                            context.fillStyle="#080";
+                            context.fillRect(20,20,50,50);
+                        </p>
+                    </details>
+                </div>
+
+                <div  class="can_div"> <!-- canvas 2-->
+                    <h4> strokStyle & strokRect <span> اطار مستطيل فاضي    </span></h4>
+                    <canvas id="my_canvas2"></canvas>
+                    <details><summary>show code </summary>
+                        <p>
+                            var can=document.getElementById('my_canvas2');
+                            var context2=can.getContext('2d');
+                            context2.strokeStyle="#080";
+                            context2.strokeRect(20,20,50,50);
+                        </p>
+                    </details>
+                </div>
+
+                <div  class="can_div"> <!-- canvas 3-->
+                    <h4> fillRect & clearRect <span> بيقص جزء من حاجه </span></h4>
+                    <canvas id="my_canvas3"></canvas>
+                    <details><summary>show code </summary>
+                        <p>
+                            var can=document.getElementById('my_canvas3');
+                            var context3=can.getContext('2d');
+                            context3.fillStyle="#080";
+                            context3.fillRect(0,0,400,200);   
+                            context3.clearRect(0,0,100,100);
+                        </p>
+                    </details>
+                </div>
+            </section>
+        </article>
+</div>
+                                    <div class="clear_float"></div> 
+                                                                                    
+<div class="can_container">
+        <h1 class="h1"> welcome to canvas 2 </h1><!----- cavens two  -->
+        <article><!--------------------------------------------- class one ------------------------>
+            <header>
+                <h1>this canvas about <span>fillStyle & fillRect </span> </h1>
+            </header>
+            <section>
+                <div class="can_div"> <!-- canvas 4-->
+                    <h4>  stroke  <span> بيعمل لين واتحكم فيه    </span></h4>
+                    <canvas id="my_canvas4"></canvas>
+                    <details><summary>show code </summary>
+                        <p>
+                                var can=document.getElementById('my_canvas4');
+                                var context4=can.getContext('2d');
+                                var  can_width=can.width; 
+                                var  can_height=can.height; 
+                                context4.fillStyle="#ddd";
+                                context4.fillRect(0,0,can_width,146);
+                                context4.strokeStyle="#f00"; 
+                                context4.lineWidth=5;
+                                /* top left line */
+                                context4.moveTo(10,10);   
+                                context4.lineTo(150,73); 
+                                /* top right */
+                                context4.moveTo(290,10);
+                                context4.lineTo(150,73);
+                                /* bottom left */
+                                context4.moveTo(10,136);
+                                context4.lineTo(150,73);
+                                /* bottom right */
+                                context4.moveTo(290,136);
+                                context4.lineTo(150,73);
+                                context4.stroke();
+                        </p>
+                    </details>
+                </div>
+
+                <div  class="can_div"> <!-- canvas 5-->
+                    <h4> font &fillText & strokeText <span>  الفونت    </span></h4>
+                    <canvas id="my_canvas5"></canvas>
+                    <details><summary>show code </summary>
+                    </details>
+                </div>
+
+                <div  class="can_div"  > <!-- canvas 6-->
+                    <h4>  &  <span> انشاء كل حاجه بالجافا سكربت  </span></h4>
+                    <div id="canv_id"></div>
+                    <details><summary>show code </summary>
+                    </details>
+                </div>
+            </section>
+        </article>
+</div>
+<!-- end canvas --------------------------------------------------------------->
+                                                                                     
+<!-- ------------------------------------- Star SVG ------------------------------------->
+<div class="can_container">
+    <h1 class="h1"> welcome to SVG 1 </h1><!----- cavens two  -->
+    <article><!--------------------------------------------- class one ------------------------>
+        <header>
+            <h1>this SVG about <span>rect & circle </span> </h1>
+        </header>
+        <section>
+                    <div class="svg_div"> <!-- svg 1-->
+                        <h4>  rect & circle  <span> مربعات ودوائر  فوق  استدعاء ملف خارجي </span></h4>
+                        <img src="svg/me.svg"> <!-- ملف خارجي --> 
+                    </div>
+
+                    <div  class="svg_div"> <!-- svg 2-->
+                        <h4> circle  & stroke & stroke-width <span>  كتابه في الصفحه     </span></h4>
+                        <svg>
+                            <circle 
+                                    r            = "50"
+                                    cx           =  "150"  
+                                    cy           = "70" 
+                                    fill         = "#222"
+                                    stroke       = "red"
+                                    stroke-width = "5"
+                                    >
+                                    <span>ممكن اكتبه في ملف الاستايل واعمله هافر وشغل بس الصح هنا </span>
+                                    <span> عشان لو حد عايز الملف ابعتله الكود بتاع الاندكس بس </span>
+                        </svg>
+                    </div>
+
+                    <div  class="svg_div"> <!-- svg 3-->
+                        <h4> ellipse  <span>  شكل بيضاوي     </span></h4>
+                        <svg>
+                            <ellipse  cx="100" cy="80" rx="20" ry="35" fill="orange" stroke="#f0f" stroke-width="5"/> <!-- في الدايره موحده انما هنا جايب اتنين عشان اعمل شكل بيضاوي-->
+                            <ellipse  cx="170" cy="80" rx="50" ry="30" fill="orange" stroke="#f0f" stroke-width="5"/>
+                            <line x1="60" y1="140" x2="87" y2="110" stroke="#f0f" stroke-width="4"/> 
+                            <line x1="45" y1="125" x2="81" y2="100" stroke="#f0f" stroke-width="4"/> 
+                            <line x1="33" y1="110" x2="78" y2="90" stroke="#f0f" stroke-width="4"/> 
+                            <line x1="27" y1="93" x2="78" y2="80" stroke="#f0f" stroke-width="4"/> 
+                            <line x1="21" y1="75" x2="78" y2="70" stroke="#f0f" stroke-width="4"/> 
+                            <line x1="16" y1="58" x2="81" y2="60" stroke="#f0f" stroke-width="4"/> 
+                            <line x1="18" y1="40" x2="85" y2="52" stroke="#f0f" stroke-width="4"/> 
+                            <line x1="24" y1="25" x2="91" y2="46" stroke="#f0f" stroke-width="4"/> 
+                        </svg>
+                    </div>
+                    
+        </section>
+    </article>
+</div>
+<!-- ------------------------------------- End SVG   ---------------------------------->
+<!-- star footer --------------------------------------------------------------->
+    <div class="clear_float"></div>
+    <footer> 
+    <span> All &copy; copyright are recevid at 2020</span>
+    </footer>
+<!-- end footer ---------------------------------------------------------------->
+<script src="js/canvas.js"></script>
+</body>
+</html>

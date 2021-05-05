@@ -1,0 +1,28 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+body{
+    background:#f50;
+    height:8000px;
+}
+
+article{
+    width: 900px;
+    margin: 50px auto;
+    background:#282828;
+    border:1px solid #fff;
+    header{
+        background: #555;
+        border-bottom:1px solid #fff;
+        padding:10px;
+    }
+    section{
+        padding:15px;
+        color:#fff;
+    }
+}

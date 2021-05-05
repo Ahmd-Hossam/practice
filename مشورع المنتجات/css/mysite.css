@@ -1,0 +1,173 @@
+body
+{background-color: black
+}
+.container
+{
+    width: 940px;
+    height: 550px;
+    background-color:#BDBDBD;
+    margin: 0px 15px;
+    
+}
+
+header{
+    min-height:15%;
+    background-color:#212121;
+}
+.logo
+{
+width:20%;
+background:#251f31;
+min-height: 15%;
+float: right;
+}
+.logo img
+{
+    width:188px;
+    height:97px;
+}
+ol, ul  {
+   list-style: none;
+    padding-right:5px;
+    margin: 0;
+   
+}
+
+header ul li
+{
+display: inline;
+padding:40px;
+}
+
+header ul
+{
+padding:40px;
+margin: 20px;
+color: #fff;
+}
+.content
+{
+                /**  شلنا الهايت من الكونتنت  والبرودكتس عشان لو
+                           عايز اضيف منتجات ف الصفحه تظهر **/
+    overflow: hidden;
+    background-color:#e0e0e0;
+}
+
+.products{
+    float: left;
+    width: 78%;
+ 
+     background-color: #d1d8e0;
+     margin: 4px;
+    padding: 0px 3px;
+}
+
+/*بدايه الصوره*/
+.product 
+{
+width: 24.5%; /*width:24.5.5%  لو عملتها كده هيخلي  المنتجات تحت  بعضها 
+                   وصوره واحده اللي واخده مساحه البرودكتس كله*/
+float: right;
+background-color: #607D8B;
+text-align: center;
+margin-top:4px ;
+margin-left: 3px;
+}
+.product img
+{
+    max-width: 100%;   
+     /*نهايه الصوره */
+}
+
+
+
+.sidebar
+{
+    float:right;
+    width:19%;
+    margin: 4px;
+    background-color: #757575;
+   min-height: 350px;
+}
+
+                            /* بدايه القائمه */
+.title
+{
+    background-color:#9E9E9E ;
+    color: #000;
+    padding: 2px 0;
+    text-align: center;
+}
+
+.lists
+{
+ 
+   width:95% ;
+    background-color: #BDBDBD;
+  border: 1px;
+  margin: 5px;
+
+ text-align:right ;
+}
+.data
+{
+    line-height: 150%;
+   
+}
+.data img
+{
+    width: 95%;
+   height: 160px;
+   margin: 4px ;
+}
+.socail
+{
+    text-align: center
+}
+                            /*نهايه  القائمه*/
+footer
+{
+min-height: 25%;
+background-color: brown;
+width: 940px;
+
+}
+                               
+ .info
+ {
+    
+overflow: hidden;
+  background-color:#32ff7e;
+ 
+ 
+
+ }
+ .box
+ {
+     width: 33.3333%;
+     float: right;
+background-color: #676767;
+     text-align: center
+ }
+.box ul
+ {
+     margin: 5px 0px 0 10px;
+ }
+.box ul li 
+{
+    margin: 1px;
+}
+ h2
+ {
+   border-bottom:2px solid#777;
+
+ }
+ .copyright
+{
+
+  background-color:#999;
+  height: 20px; 
+  text-align: center;
+  padding: 5px 0 0 0;
+  
+}

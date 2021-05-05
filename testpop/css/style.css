@@ -1,0 +1,84 @@
+
+/* start popup *****************************************************************/
+.popup{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,.8);
+    z-index:9999;
+    display:none;
+}
+
+.popup .inner{
+    position: fixed;
+    width:320px;
+    height:300px;
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:5px;
+    top:50%;
+    left:50%;
+    padding:15px 10px ;
+    margin:-150px 0 0 -160px
+}
+
+.popup .inner h1{
+    color:#453636de;
+    padding-bottom:10px
+}
+
+.popup .inner p{
+    color:#555;
+    padding-top:10px;
+    line-height:1.5
+}
+
+.popup .inner .close_btn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 3px 6px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    background: #fff;
+}
+/* end popup *****************************************************************/
+
+
+
+
+/* start show popup *****************************************************************/
+.show_pop{
+    border:1px solid #333;
+    padding:5px 10px ;
+    margin-left:10px;
+    cursor:pointer;
+    background:#123;
+    color:#fff;
+    position: relative;
+    left:-20px;
+    transition:all .2s ease-in-out
+}
+.show_pop:nth-child(2){
+    padding:5px 12px
+}
+
+.show_pop:hover{
+    left:-15px;
+}
+/* end show popup  *****************************************************************/
+.showpop{
+    position: absolute;
+    top:50%;
+    left:50%;
+    display: flex;
+    margin-left: -150px;
+}
+.showpop button{
+    margin:0 20px;
+}

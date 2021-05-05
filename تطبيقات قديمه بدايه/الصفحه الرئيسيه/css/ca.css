@@ -1,0 +1,81 @@
+
+html
+{
+    background:#f1f1f1;
+}
+
+ul
+{
+    padding:0;
+    margin:0;
+    list-style:none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.navigation
+{
+    
+    width:300px;
+    background : #e056fd ;
+    /*سيب من فوق 20 بيكسل وحطها في النص */
+    margin:20px auto;
+
+    /**لو عايز من جميع الاتجاهات اسيب 20بس و0 يعني
+    الاطار حو الكلام **/
+
+    padding: 0px 20px;
+    min-height: 50px;
+}
+/**علامه الاكبرمن عشان ينسق ال ال اي الكبيره بس واللي جوه لائه
+**/
+
+.navigation > li
+ {
+     /**تظبيط المسافات بين القوائم **/
+padding:15px 10px ;
+      /**عشان يخلي المنيو افقي**/
+float: left;
+}
+
+         /**بيشيل الخط اللي تحت الينكات**/
+.navigation  li a
+{
+    text-decoration: none;
+}
+
+
+        /**عشان السب منيو تبقي تحت البوودكتس**/
+ .menu
+{
+    position: relative;
+}
+
+         
+ .submenu
+{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width:50px;
+    padding:40px;
+    background:#fff;
+    /**اخفي السب منيو **/
+    display:none;
+}
+   /**قبل السب منيو**/
+.submenu:before
+{
+    /**عشان السهم الصغير**/
+content: "";
+border-left: 6px solid transparent ;
+border-right: 6px solid transparent ;
+border-bottom: 6px solid #fff ;
+height: 0;
+width: 0;
+position:absolute;
+left: 30px;
+top: -6px;
+}
+/** لما اقف ع المنيو اظهر السب منيو**/
+.menu:hover .submenu{
+display:block;
+}

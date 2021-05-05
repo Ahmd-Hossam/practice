@@ -1,0 +1,326 @@
+$maincolor:red;
+$mincolor:green;
+$var-color:#f80;
+$var-backgrond:#147;
+
+$font-size:25px;
+$main-width:100%;
+$num-classes:4;
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: #f1f1f1;
+}
+.clear_float{
+    clear: both;
+}
+.h1{
+    font-size: 2em;
+    span{
+        color:$maincolor;
+        span{
+            color:$mincolor
+        }
+    }
+} 
+
+.text-center {
+    text-align: center;
+}
+
+hr{
+    margin: 30px 0;
+}
+
+/******************************* start variabels */
+h1{
+    color:$var-color;
+    background:$var-backgrond;
+}
+/****************************** end  variabels */
+
+
+
+
+/******************************* start nesting  */
+.parent{
+    width:300px;
+    height: 200px;
+    border:1px solid #999;
+    background:#fff;
+    margin:auto;
+    &:hover{
+        background:#123;
+        cursor: pointer;
+    }
+    .child_one{
+        margin:20px;
+        background:black;
+        color:#fff
+    }
+    .child_two{
+        margin:0 20px 20px 20px;
+        background: brown;
+        color:white;
+    }
+}
+/******************************* end nesting  */
+
+
+
+
+/******************************* start operators   */
+.operators{
+    background:#333;
+    overflow: hidden;
+
+    .o-one{
+        font-size:$font-size + 5;
+        float: left;
+        width:$main-width / $num-classes;
+    }
+    .o-two{
+        font-size:$font-size +10;
+        float: left;
+        width:$main-width / $num-classes;
+    }
+    .o-three{
+        font-size:$font-size+15;
+        float: left;
+        width:$main-width / $num-classes;
+    }
+    .o-four{
+        font-size:$font-size+20;
+        float: left;
+        width:$main-width / $num-classes;
+    }
+    
+}
+
+/******************************* end operators  */
+
+
+
+/******************************* start extend  */
+.extend{
+    background:#639856;
+    padding:50px;
+    .ex-one{
+        color:#f1f1f1;
+        background:#147;
+        border-radius: 5px;
+        margin:30px;
+        outline:none;
+        border:2px solid #123;
+        padding:15px
+    }
+    .ex-two{
+        @extend.ex-one;
+        padding:30px
+    }
+}
+/******************************* end extend   */
+
+
+
+
+/******************************* start place   */
+.place{
+    background:#147;
+    padding:30px
+}
+/******************************* end place    */
+
+
+
+
+/******************************* start import   */
+    /*       @import"osama";         بستدعيه فوق  */
+.import{
+    background:#852;
+    padding:30px
+}
+/******************************* end import     */
+
+
+
+
+/******************************* start mixin    */
+@mixin medo($s) {
+    -webkit-border-radius:$s;
+    -moz-border-radius:$s;
+    -o-border-radius:$s;
+    -ms-border-radius:$s;
+    border-radius: $s;
+}
+.mix{
+    background:#1254;
+    padding:30px;
+    div{
+        @include medo(14px);
+        background:#123;
+        margin:30px
+    }
+
+    .mix_1{
+        @include medo(5px)
+    }
+    .mix_2{
+        @include medo(15px)
+    }
+    .mix_3{
+        @include medo(25px)
+    }
+}
+/******************************* end mixin    */
+
+
+
+/******************************* start if    */
+.iff{
+    background:#3173b64a;
+    margin:50px;
+    padding:30px;
+}
+$dirct:"rtl";
+@if $dirct == rtl{
+    .div_if{
+        width:100px;
+        height:50px;
+        margin:auto;
+        background:#123;
+        border:1px solid #145;
+        border-radius:10px;
+        line-height:50px;
+        text-align:center;
+        color:#f2f1f1;
+    }
+}@else{
+    .div_if{
+        width:100px;
+        margin:auto;
+        background:#f00
+    }
+}
+/******************************* end if    */
+
+
+/******************************* start for     */
+.ffor{
+    background:#784;
+    padding:30px;
+    text-align:center ;
+    margin:50px;    
+}
+
+@for $i from 1 through 20{
+    .class#{$i}{
+        font-size: 15px + $i;
+    }
+}
+  /******************************* end for    */
+
+
+
+/******************************* start grade sysyem    */
+.grade{
+    padding:50px 0;
+    background:#639856;
+    overflow: hidden;
+}
+.export{
+    float:left;
+    border:1px solid #123;
+    padding: 5px;
+    color:#fff;
+    text-align:center
+}
+@for $x from 1 through 12{
+    .col-#{$x}{
+        width:(100% / (12/$x));
+        @extend .export;
+    }
+}
+/******************************* end grade sysyem    */
+
+
+
+
+/******************************* start each    */
+.each{
+    padding: 50px 0;
+    margin-top: 100px;
+    background: #cc262869;
+    color: #fff;
+}
+
+
+
+$all:facebook twitter youtube ;
+@each $count in $all{
+    .#{$count}{
+        background:url('../imgs/#{$count}.jpg');
+        background-size: cover;
+        height: 300px;
+    }
+}
+/******************************* end each      */
+
+
+
+
+/******************************* start mlti_each    */
+.each2{
+    padding: 20px 0;
+    margin-top: 200px;
+    background: #7c26cc69;
+    color: #fff;
+}
+
+@each $selector,$background,$color,$font,$width in 
+        (one,red,black,20px,100px),
+        (two,black,red,30px,200px),
+        (three,purple,white,40px,300px),
+        (four,rgb(52, 143, 90),white,50px,400px),
+        (fife,rgb(34, 0, 128),white,60px,500px){
+    .#{$selector}{
+        background:$background;
+        color:$color;
+        font-size: $font;
+        width:$width;
+    }
+}
+/******************************* end multi each      */
+
+
+
+
+
+/******************************* start map each    */
+.each3{
+    padding: 20px 0;
+    margin-top: 200px;
+    background: #785;
+    color: #fff;
+}
+
+
+$map:(h1:15px, h2:20px, h3:30px, h4:40px ,h5:50px);
+@each $selct,$val in $map{
+    .heads{
+        #{$selct}{
+            font-size:$val;
+            background:#258;
+            width:100px;
+            margin:auto;
+            text-align:center;
+            color:#fff;
+            padding:10px;
+        }
+    }
+}
+/******************************* end map each     */

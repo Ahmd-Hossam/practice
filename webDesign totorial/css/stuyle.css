@@ -1,0 +1,43 @@
+article {
+  width: 800px;
+  margin: 50px auto;
+  background: #999;
+  border: 1px solid #222;
+  padding: 20px 10px;
+}
+
+article header span {
+  color: #00f;
+  margin: 0 50px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+article section {
+  margin-top: 40px;
+}
+
+article section input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+article section span {
+  position: relative;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+article section span::after {
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background: #EEE;
+  border: 1px solid #333;
+  left: 0;
+  top: 20px;
+  margin-top: 5px;
+}
+/*# sourceMappingURL=stuyle.css.map */

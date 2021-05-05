@@ -1,0 +1,60 @@
+body{
+    background-color:#2C3A47;
+}
+.contianer{
+    width:300px;
+    height:300px;
+    top:30%;
+    left: 30%;
+    position:absolute;
+    text-align:center;
+    background-color:#222;
+    border-radius:39px;
+    border:1px solid  #26de81;
+}
+.contianer h1{
+    color:#f1f1f1;
+    font-weight: 500;
+    text-transform:uppercase;
+}
+.contianer>#tex,#pass{
+    width:200px;
+    padding:14px 10px;
+    margin:30px auto;
+    outline:none;
+    border-radius:22px;
+    border:2px solid #1B9CFC;
+    display: block;
+    text-align:center; 
+    background-color: #3d3d3d;
+    color:#f1f1f1;
+}
+#tex:focus{
+    width:250px;
+    background-color: #3d3d3d;
+    border:2px solid #20bf6b;
+}
+#pass:focus{
+    width:250px;
+    background-color: #3d3d3d;
+    border:2px solid #20bf6b;
+}
+
+#go{
+    width:100px;
+    padding:10px 10px;
+    margin:20px auto;
+    outline:none;
+    border-radius:17px;
+    border:2px solid  #20bf6b;
+    display: block;
+    text-align:center; 
+    background-color: #3d3d3d;
+}
+#go:focus{
+    width:120px;
+    background-color: #20bf6b;
+    border:2px solid #20bf6b;
+    cursor: auto;
+
+}

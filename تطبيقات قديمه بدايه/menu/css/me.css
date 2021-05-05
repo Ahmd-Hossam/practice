@@ -1,0 +1,142 @@
+body
+{
+    background:#999;
+}
+.container
+{
+    min-width: 500px;
+    min-height: 620px ;
+    background-color:#555
+}
+header
+{
+    min-height: 15%;
+    background-color: firebrick;
+    text-align: center;
+    
+
+}
+nav
+{
+    padding: 20px 0 0 0 ;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+   
+    font-size: 40px
+}
+.content
+{
+    min-height:70%;
+    background-color:rebeccapurple;
+width: 90%;
+overflow: hidden;
+   
+}
+.scient
+{
+    min-height:58%;
+    background-color:red;
+width: 40%;
+padding: 20px 25px 0 0 ;
+}
+.sports
+{
+    background-color: green;
+    width: 40%;
+    min-height: 58%;
+    float: right  top;
+    padding: 00px 0 50px 150px;
+ 
+}
+ul
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.big
+{
+   
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    float: right;
+    padding: 2px 0px 30px 2px ;
+
+  
+}
+.big a
+{
+text-decoration-line: none;
+color: #000
+}
+.big>li
+{
+    color:#fff;
+  background-color: #00BCD4;
+
+}
+.here
+{
+    width: 30px;
+    background-color:#455;
+    color: #000;
+    height: 15px;
+    margin: 0 0px 0 0px;
+    cursor: auto
+}
+.here:hover{
+    color: #2196F3;
+
+}
+.logo img
+{
+    width:30px;
+   height: 20px;
+}
+.bigimg1 img
+{
+  
+width: 200px;
+height: 200px;
+
+}
+.bigimg1 
+{
+    display: none;
+    position: absolute
+    
+}
+.here:hover .bigimg1
+{
+   display: block ;
+}
+.bigimg1footer
+{
+    width: 200px;
+    min-height: 50px;
+    background-color:#fff;
+
+ 
+}
+.bigimg1footer ul li
+{
+   text-decoration-line: underline;
+    padding:2px  ;
+}
+.bigimg1footer li :hover{
+color: #E040FB;
+cursor: wait
+}
+
+.bigimg1footer a
+{
+    color:#2196F3;
+    
+}
+.pioneer
+{
+    color:#212121
+    
+}

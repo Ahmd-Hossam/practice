@@ -1,0 +1,216 @@
+body{
+    background-color:#fff;
+    padding:0;
+    margin:0;
+}
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+}
+.clear_float{
+    clear:both;
+}
+ul{
+    list-style:none;
+}
+/* star header ***********************************************************************/
+.main_header{
+    padding:20px;
+    background:#666;
+}
+
+.main_header h1{
+        color:#fff;
+}
+/* end header ************************************************************************/
+/* start main************************************************************************/
+main{
+    padding:20px;
+    background-color:#444;
+    color:#fff;
+    text-align:center;
+}
+main:after{
+    content:"this is main";
+    color:red;
+}
+/* end main ****************************************************************************/
+/* start article  **********************************************************************/
+.contaier{
+    width:67%;
+    float:left;
+}
+.contaier article{
+    background-color:#ddd;
+    margin: 15px;
+    border:2px solid #666;
+}
+.contaier article header{
+    background-color: #999;
+    padding:6px;
+}
+.contaier article header h1 span{
+    color:red;
+}
+.contaier article section{
+    overflow: hidden;
+}
+.contaier article section details:first-child{
+    background-color:#222;
+    width:50%;
+    float:left;
+    color:#fff;
+}
+.contaier article section details:nth-child(2){
+    background-color:#fff;
+    width:50%;
+    float:right;
+    color:#222;
+}
+.contaier article section  code{
+    margin: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: block;
+    border: 1px solid #333;
+    max-width:500px;
+}
+.contaier article section .html5 input{
+    display: block;
+    margin: 0 0 10px 0;
+}
+.contaier article section form .label{
+    color:#080;
+    float:right;
+}
+.contaier article section form  span{
+    color:#f00
+}
+
+
+/* end article **********************************************************************/
+/* start aside ***********************************************************************/
+aside{
+    float:right;
+    width:30%;
+    padding:5px;
+    background: #6666;
+    margin:15px;
+}
+aside section{
+    background-color:#fff;
+    border:2px solid #555;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+aside h2{
+    background:#d1d1d1;
+}
+aside section:first-child h2:after{
+    content:"this is ul section";
+    color:#f00;
+    font-size:15px;
+}
+aside section:nth-child(2) h2:after{
+    content:"this is progress";
+    color:#f00;
+    font-size:15px;
+}
+aside section:nth-child(3) h2:after{
+    content:"this is meter section";
+    color:#f00;
+    font-size:15px;
+}
+
+aside section ul{
+    margin-top:10px;
+}
+aside section ul li{
+    line-height:1.5;
+}
+aside section .printed{
+    color:red;
+    width:90%;
+    border: 2px solid #111;
+    overflow: hidden;
+}
+/* end aside ************************************************************************/
+/* start canvas ********************************************************************/
+.can_container{
+    width:97%;
+    background-color:#ddd;
+    margin:15px;
+
+}
+.can_container .h1{
+    text-align:center;
+}
+.can_container article {
+    
+    background-color: #999;
+    border:2px solid #555;
+} 
+.can_container article header{
+    background-color: #666;
+    color:#ffff;
+}
+.can_container article header span{
+    color:#f00;
+}
+.can_container article section .can_div{
+    width:33.3333%;
+    background-color: #fff;
+    border: 2px solid #222;
+    float: left;
+    overflow: hidden;
+}
+.can_container article section .can_div h4{
+    color:#f1f1f1;
+    background-color: #222;
+}
+.can_container article section .can_div h4 span{
+    color: #080;
+}
+.can_container article section .can_div canvas{
+    background-color:#f90;
+    width: 100%;
+    height:200px;
+    border-bottom:1px solid #222;
+}
+.can_container article section .can_div details{
+    cursor: pointer;
+}
+
+/* end canvas ************************************************************** */
+/* start SVG ************************************************************** */
+.can_container article section .svg_div{
+    width:33.3333%;
+    height:220px;
+    background-color: #ddd;
+    border: 2px solid #222;
+    float: left;
+    overflow: hidden;
+} 
+.can_container article section .svg_div h4{
+    color:#f1f1f1;
+    background-color: #222;
+}
+.can_container article section .svg_div h4 span{
+    color: #080;
+}
+
+
+/* end SVG ************************************************************** */
+/* start footer */
+footer{
+    background:#333;
+    color:#fff;
+    padding:15px;
+    text-align:center;
+    font-size:20px;
+}
+
+

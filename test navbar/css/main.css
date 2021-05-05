@@ -1,0 +1,85 @@
+body{
+    padding:0;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    background:url(../img/egs.jpg);
+    width:100%;
+    height:100vh;
+    background-size:cover;
+
+}
+nav{
+    height:7vh;
+    background-color: #999;
+    position: fixed;
+    width: 100%;
+}
+ul{
+
+    padding:0;
+    margin:0;
+    list-style: none;
+    align-items: center;
+    display:flex;
+    float: right;
+    height:100%;
+}
+ul li{
+    padding: 20PX;
+}
+ul li a{
+    text-decoration:none;
+    color:#00f;
+    font-size:20px;
+    
+}
+section {
+    margin-top:30px;
+}
+section h1{
+    text-align:center;
+}
+section p{
+    line-height:1.5;
+    text-align: justify;
+    padding:0 15px;
+}
+
+
+@media screen and (max-width:768px){
+    ul{
+        width:100%;
+        height:100vh;
+        position:fixed;
+        flex-direction:column;
+        background-color: aquamarine;
+        clip-path: circle(100px  at 100% 100%);
+        -webkit-clip-path:circle(100px at 100% -20% );
+        transition: all 1s ease-out ;  
+        
+    }
+    
+.show{
+    clip-path: circle(700px  at 100% 100%);
+    -webkit-clip-path:circle(700px at 120% -30% );
+    transition: all 1s ease-out ;  
+}
+    
+    nav{
+        position:relative;
+    }
+    .humberger{
+        position:fixed;
+        right:2%;
+        top:1.5%;
+        z-index: 9999999;
+    }
+    .humberger .line{
+        width:20px;
+        height:4px;
+        background-color:#fff;  
+        margin-bottom:5px;
+    }
+}

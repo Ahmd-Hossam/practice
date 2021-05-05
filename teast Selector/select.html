@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background:#999;
+}
+article{
+    width:500px;
+    height:500px;
+    margin:auto;
+}
+article header{
+    width:100%;
+    height:30px;
+    background:#666;
+    color:#f1f1f1;
+}
+article section{
+    background:#f2f2f2;
+    border:2px solid #222;
+}
+article section nav{
+    background:#777;
+    height: 30px;
+    border-bottom: 1px solid #222;
+}
+article section nav ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+    float: right;
+    line-height: 30px;
+}
+article section  nav ul li{
+    display: inline;
+    background: #080;
+    margin: 10px;
+    cursor:pointer;
+    color:#f1f1f1
+}
+#contant{
+    background:chartreuse;
+}
+.active{
+    background:#f80;
+    color:#f00;
+}
+</style>
+<body>
+    <article>
+        <header> <h1>hello thise is test selector </h1></header>
+        <section>
+            <nav>
+                <ul class="big">
+                    <li class="click">  home       </li>
+                    <li class="click" >  about us   </li>
+                    <li  class="click">  contant me </li>
+                </ul>
+            </nav>
+
+                <div id="contant">
+                        home ience which inspires stimulates thinking to open discussion for large presents factual
+                        which inspires stimulates thinking to open discussion for large presents
+                        factual ience which inspires stimulates thinking ience which inspires stimulates thinking to
+                        open discussion for large presents factual  to open discussion for large presents factual About
+                        ience which inspires stimulates thinking to open discussion for large presents factual ience 
+                    </div>
+
+
+            <!--
+            <p class="home">
+                home ience which inspires stimulates thinking to open discussion for large presents factual
+                which inspires stimulates thinking to open discussion for large presents
+                factual ience which inspires stimulates thinking ience which inspires stimulates thinking to
+                open discussion for large presents factual  to open discussion for large presents factual About
+                ience which inspires stimulates thinking to open discussion for large presents factual ience 
+            </p>
+            <p class="about">
+                about ience which inspires stimulates thinking to open discussion for large presents factual
+                which inspires stimulates thinking to open discussion for large presents
+                factual ience which inspires stimulates thinking ience which inspires stimulates thinking to
+                open discussion for large presents factual  to open discussion for large presents factual About
+                ience which inspires stimulates thinking to open discussion for large presents factual ience 
+            </p>
+            <p class="contant">
+                contant ience which inspires stimulates thinking to open discussion for large presents factual
+                which inspires stimulates thinking to open discussion for large presents
+                factual ience which inspires stimulates thinking ience which inspires stimulates thinking to
+                open discussion for large presents factual  to open discussion for large presents factual About
+                ience which inspires stimulates thinking to open discussion for large presents factual ience 
+            </p>
+        -->
+        </section>
+    </article>
+
+<script>
+    var contant=document.getElementById('contant');
+    var list =document.getElementsByTagName('li');
+    var select=["home","about","contact"];
+
+
+list[0].onclick=function(){
+    this.classList.add('active');
+    contant.innerHTML=select[0];
+    c[1].classList.remove('active');
+    c[2].classList.remove('active');
+    }
+
+list[1].onclick=function(){
+    this.classList.add('active');
+    contant.innerHTML=select[1];
+    c[0].classList.remove('active');
+    c[2].classList.remove('active');
+    }
+
+list[2].onclick=function(){
+    this.classList.add('active');
+    contant.innerHTML=select[2];
+    c[0].classList.remove('active');
+    c[1].classList.remove('active');
+    }
+</script>
+</body>
+</html>
